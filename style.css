@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'B';
+    src: url('/.font/TTLakes-Bold.eot');
+    src: url('./font/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./font/TTLakes-Bold.woff') format('woff'),
+    url('./font/TTLakes-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'M';
+    src: url('./font/TTLakes-Medium.eot');
+    src: url('./font/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+    url('./font/TTLakes-Medium.woff') format('woff'),
+    url('./font/TTLakes-Medium.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'R';
+    src: url('./font/TTLakes-Regular.eot');
+    src: url('./font/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./font/TTLakes-Regular.woff') format('woff'),
+    url('./font/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: "M";
+    margin: 0px;
+}
+.menu{
+    position: fixed;
+    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
+    width: 320px;
+    height: 100vh;
+
+}
+.menu_header{
+    display: flex;
+    padding: 18px 16px 0px 16px;
+}
+.menu_header button img{
+    width: 40px;
+    height: 40px;
+}
+.menu_header button{
+    border: 0px;
+    background: none;
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+}
+.menu_header img{
+    width: 100px;
+    height: 50;
+}
+.menu_header_left {
+    display: flex;
+}
+.menu_header_left button{
+    margin-right: 16px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.menu_header_right{
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.nav_list{
+    padding: 0px;
+}
+.nav_list li{
+    display: flex;
+    list-style: none;
+}
+.nav_list li hr{
+    display: none;
+    width: 4px;
+    height: 32px;
+    background: rgba(65, 246, 215);
+    border: 0px;
+    border-radius: 0px 10px 10px 0px;
+    margin: 0px;
+}
+.nav__link{
+    color: black;
+    padding: 16px 0px 8px 0px;
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 2px solid #ffffff00;
+    outline: none;
+    margin-left: 16px; 
+    list-style: none;
+}
+.nav_list li:hover a{
+    color: gray;
+}
+.nav__link--active{
+    color: #7e7e82;
+    padding: 16px 0px 8px 0px;
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 2px solid #ffffff00;
+    outline: none;
+    margin-left: 16px; 
+    list-style: none; 
+}
+.nav__link--active::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 5px;
+    height: 32px;
+    left: -17px;
+    top: 11px;
+    background-color: #41F6D7;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px; 
+}
+
+
+.menu_footer{
+    position: fixed;
+    bottom: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+@media (max-height: 700px) { /* Подберите подходящее значение высоты */
+    .menu_footer {
+        position: relative; /* Устанавливаем меньшую максимальную высоту */
+    }
+}
+.menu_footer button{
+    margin-right: 16px;
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    border: 0px;
+    background: none;
+
+}
+.menu_footer button img{
+    width: 40px;
+}
+.menu-footer__contacts{
+    display: flex;
+    flex-direction: column;
+}
+.menu-footer__contacts a{ 
+    color: black;
+    padding: 16px 0px 0px 0px;
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    list-style: none;
+}
+
+.menu-footer__tel{
+    font-size: 24px;
+    font-family: "B";
+}
+.menu_footer_lang_list{
+    padding: 0px 0px 8px 0px;
+    display: flex;
+}
+.lang-list__link{
+    color: black;
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    list-style: none;
+}
+.menu_footer_lang_list li{
+    padding: 0px;
+    margin-right: 16px;
+    list-style: none;
+}
+.lang-list__link--active{
+    color: #7e7e82;
+}
+.lang-list__link:hover{
+    color:#7e7e82;
+}
